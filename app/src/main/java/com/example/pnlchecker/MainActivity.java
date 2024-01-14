@@ -15,29 +15,18 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         PNLClient client = FeignBuilder.buildClient();
-        try {
-
-            Thread thread = new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    Response response = client.getPNL();
-                    runOnUiThread(new Runnable(){
-                        @Override
-                        public void run() {
-                            TextView text = findViewById(R.id.Response);
-                            text.setText(response.msg);
-                        }
-                    });
-                    System.out.println(response);
-
-                }
-            });
-            thread.start();
-        } catch (Exception ex) {
-            System.out.println(ex);
-        }
+        Thread thread = new Thread(() -> {
+            Response response = client.getPNL();
+            updateTextView(response.msg);
+        });
+        thread.start();
         setContentView(R.layout.activity_main);
     }
 
-
+    private void updateTextView(String text) {
+        runOnUiThread(() -> {
+            TextView textView = findViewById(R.id.Response);
+            textView.setText(text);
+        });
+    }
 }
