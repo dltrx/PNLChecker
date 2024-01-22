@@ -13,7 +13,7 @@ public class MyViewHolder extends RecyclerView.ViewHolder {
     // Declare your UI elements here
     public TextView textView;
 
-    public MyViewHolder(@NonNull View itemView) {
+    public MyViewHolder( View itemView) {
         super(itemView);
 
         // Initialize UI elements
