@@ -44,7 +44,7 @@ public abstract class ItemDatabase extends RoomDatabase {
 
         @Override
         protected Void doInBackground(Void... voids) {
-            itemDao.insert(new Item("USDTBNB", "pancakeswap", "syncswap", "10.03.2024:10:34:2", 23.1));
+            itemDao.insert(new Item("USDTBNB", "pancakeswap", "syncswap", "10.03.2024:10:34:23", 23.1));
             itemDao.insert(new Item("SUIAPT", "pancakeswap", "sushiswap", "23.02.2025:11:12:23", 23.2));
             return null;
         }
