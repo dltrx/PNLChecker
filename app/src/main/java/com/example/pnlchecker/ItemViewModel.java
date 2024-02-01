@@ -6,6 +6,8 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.LiveData;
 
+import com.example.pnlchecker.domain.Item;
+
 import java.util.List;
 
 public class ItemViewModel extends AndroidViewModel {

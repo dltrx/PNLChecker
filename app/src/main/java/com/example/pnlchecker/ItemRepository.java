@@ -5,6 +5,8 @@ import android.os.AsyncTask;
 
 import androidx.lifecycle.LiveData;
 
+import com.example.pnlchecker.domain.Item;
+
 import java.util.List;
 
 public class ItemRepository {

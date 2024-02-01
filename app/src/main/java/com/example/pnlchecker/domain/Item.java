@@ -1,4 +1,4 @@
-package com.example.pnlchecker;
+package com.example.pnlchecker.domain;
 
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
