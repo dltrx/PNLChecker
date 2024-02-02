@@ -6,4 +6,11 @@
         <item name="cornerSize">50%</item>
     </style>
 
+    <style name="WhiteToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="colorAccent">@android:color/white</item>
+<!--        <item name="navigationIcon">@color/white</item>-->
+    </style>
+
 </resources>

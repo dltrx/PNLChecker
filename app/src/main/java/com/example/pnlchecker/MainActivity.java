@@ -1,6 +1,8 @@
 package com.example.pnlchecker;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,8 +13,10 @@ import com.example.pnlchecker.client.PNLClient;
 import com.example.pnlchecker.client.FeignBuilder;
 
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
+import android.view.Window;
 import android.widget.TextView;
 
 import com.example.pnlchecker.domain.Item;
@@ -54,6 +58,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+        myToolbar.setTitleTextColor(Color.WHITE);
+//        getSupportActionBar().setTitle("Whatever");
+//        toolbar.setNavigationIcon(getDrawable(R.drawable.your_white_navigation_icon));
+
         mAddFab = findViewById(R.id.add_fab);
 
         mAddItemUrlFab = findViewById(R.id.add_item_url_fab);
@@ -77,6 +87,8 @@ public class MainActivity extends AppCompatActivity {
         mAddItemFab.setOnClickListener(view -> {
             toggleFabsAndTextsVisibility();
         });
+
+
 
         PNLClient client = FeignBuilder.buildClient();
         Thread thread = new Thread(() -> {
