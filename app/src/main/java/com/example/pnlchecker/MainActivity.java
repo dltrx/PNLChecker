@@ -17,6 +17,7 @@ import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.view.WindowManager;
 import android.widget.TextView;
 
 import com.example.pnlchecker.domain.Item;
@@ -26,6 +27,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
     private ItemViewModel itemViewModel;
+
+    MainActivity activity;
 
     FloatingActionButton mAddFab, mAddItemUrlFab, mAddItemFab;
 
@@ -62,7 +65,12 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(myToolbar);
         myToolbar.setTitleTextColor(Color.WHITE);
 //        getSupportActionBar().setTitle("Whatever");
-//        toolbar.setNavigationIcon(getDrawable(R.drawable.your_white_navigation_icon));
+//        myToolbar.setNavigationIcon(getDrawable(R.drawable.your_white_navigation_icon));
+
+//        Window window = activity.getWindow();
+//        window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
+//        window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+//        window.setStatusBarColor(activity.getResources().getColor(R.color.primaryVariantColor));
 
         mAddFab = findViewById(R.id.add_fab);
 

@@ -6,11 +6,29 @@
         <item name="cornerSize">50%</item>
     </style>
 
-    <style name="WhiteToolbar" parent="Widget.AppCompat.Toolbar">
-        <item name="android:textColorPrimary">@android:color/white</item>
-        <item name="android:textColorSecondary">@android:color/white</item>
-        <item name="colorAccent">@android:color/white</item>
-<!--        <item name="navigationIcon">@color/white</item>-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+<!--        Theme.AppCompat.Light.NoActionBar-->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryVariantColor</item>
+        <item name="colorPrimaryVariant">@color/primaryVariantColor</item>
+        <item name="colorOnPrimary">@color/primaryOnColor</item>
+
+        <item name="android:colorBackground">@color/backColor</item>
+
+
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryVariantColor</item>
+        <item name="colorOnSecondary">@color/secondaryOnColor</item>
+
+        <item name="colorError">@color/errorColor</item>
+        <item name="colorOnError">@color/errorOnColor</item>
+
+        <item name="colorSurface">@color/surfaceColor</item>
+        <item name="colorOnSurface">@color/surfaceOnColor</item>
+
+        <item name="colorOnBackground">@color/backgroundOnColor</item>
+
+        <!-- Customize other attributes as needed -->
     </style>
 
 </resources>

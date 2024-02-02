@@ -2,7 +2,25 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.PNLChecker" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryVariantColor</item>
+        <item name="colorPrimaryVariant">@color/primaryVariantColor</item>
+        <item name="colorOnPrimary">@color/primaryOnColor</item>
+
+        <item name="android:colorBackground">@color/backColor</item>
+
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="colorSecondaryVariant">@color/secondaryVariantColor</item>
+        <item name="colorOnSecondary">@color/secondaryOnColor</item>
+
+        <item name="colorError">@color/errorColor</item>
+        <item name="colorOnError">@color/errorOnColor</item>
+
+        <item name="colorSurface">@color/surfaceColor</item>
+        <item name="colorOnSurface">@color/surfaceOnColor</item>
+
+        <item name="colorOnBackground">@color/backgroundOnColor</item>
+
     </style>
 
     <style name="Theme.PNLChecker" parent="Base.Theme.PNLChecker" />
