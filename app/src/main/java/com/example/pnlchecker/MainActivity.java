@@ -28,8 +28,6 @@ import java.util.List;
 public class MainActivity extends AppCompatActivity {
     private ItemViewModel itemViewModel;
 
-    MainActivity activity;
-
     FloatingActionButton mAddFab, mAddItemUrlFab, mAddItemFab;
 
     TextView addAlarmActionText, addPersonActionText;
